@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/website_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="https://www.youtube.com/watch?v=2S24-y0Ij3Y"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/open_website_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:onClick="kunjungiChannel"
+        android:layout_marginLeft="120dp"
+        android:text="Kunjungi Channel"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/location_editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/editText_loc"
+        android:textColor="#FFF" />
+
+    <Button
+        android:id="@+id/open_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="135dp"
+        android:onClick="openLocation"
+        android:text="@string/button_loc" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="100dp"
+        android:text="Selamat Datang"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="30dp" />
+</LinearLayout>
